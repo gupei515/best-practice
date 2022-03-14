@@ -10,7 +10,8 @@ module.exports = {
     ],
     plugins: [
         "react-hooks",
-        "@typescript-eslint"
+        "@typescript-eslint",
+        "prettier",
     ],
     env: {
         es6: true,
