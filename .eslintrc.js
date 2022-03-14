@@ -38,7 +38,7 @@ module.exports = {
         "@typescript-eslint/no-explicit-any": "off",
         "jest/expect-expect": "off",
         "prettier-prettier": "error",
-        "react/props-types": "off",
+        "react/prop-types": "off",
         "react/display-name": "off",
         "react/jsx-curly-brace-presence": "error",
         "react-hooks/rules-of-hooks": "error",
