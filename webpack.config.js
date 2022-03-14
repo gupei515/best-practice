@@ -1,3 +1,5 @@
+const webpack = require("webpack");
+
 module.exports = (env, args) => {
     console.log(`Building for env='${process.env.NODE_ENV} with mode='${args.mode}''`);
 

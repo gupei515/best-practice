@@ -23,7 +23,7 @@ module.exports = {
         ecmaFeatures: {
             jsx: true
         },
-        project: "./src/tsconfig.json",
+        project: "./tsconfig.json",
         sourceType: "module"
     },
     ignorePatterns: ["node_modules", "*.d.ts", "*.js"],
