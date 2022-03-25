@@ -34,7 +34,7 @@ module.exports = {
         "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
         "@typescript-eslint/no-explicit-any": "off",
         "jest/expect-expect": "off",
-        "prettier/prettier": "error",
+        "prettier/prettier": ["error", { endOfLine: "auto" }],
         "react/prop-types": "off",
         "react/display-name": "off",
         "react/jsx-curly-brace-presence": "error",
