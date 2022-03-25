@@ -17,7 +17,7 @@ module.exports = (env, args) => {
         },
         resolve: {
             extensions: [".ts", ".tsx", ".js", ".jsx", ".json", ".scss", ".css"],
-            alias: aliases
+            alias: alias
         },
     }
 }
