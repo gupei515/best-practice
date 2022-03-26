@@ -1,4 +1,7 @@
 /* https://formidable.com/blog/2021/stores-no-context-api/ */
+/**
+ * its easy to fail to the trap of provider nested nest
+ */
 import { useState, createContext, useContext } from "react";
 const CountContext = createContext(null);
 const CountProvider = ({ children }) => {
