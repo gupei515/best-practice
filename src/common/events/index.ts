@@ -44,6 +44,6 @@ const createStore = (init) => {
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const useCountStore = createStore((get, set) => ({
     count: 0,
-    increment: () => set((store: any) => ({ ...store, count: store.count + 1 })),
-    decrement: () => set((store: any) => ({ ...store, count: store.count - 1 })),
+    increment: () => set((store: any) => ({ ...store, count: store.count + 1 })), // invesion of control
+    decrement: () => set((store: any) => ({ ...store, count: store.count - 1 })), // invesion of control
 }));
