@@ -2,9 +2,13 @@ const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { merge } = require("lodash");
 const { IgnorePlugin, EnvironmentPlugin } = require("webpack");
+const path = require("path");
+const fs = require("fs");
+
+const devConfig = require("./webpack.dev.config");
 
 module.exports = (env, args) => {
-    console.log(`Building for env='${process.env.NODE_ENV} with mode='${args.mode}''`);
+    console.log(`Building for env='${process.env.NODE_ENV}' with mode='${args.mode}''`);
 
     const productionMode = args.mode === "production";
 

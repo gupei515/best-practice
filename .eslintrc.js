@@ -4,7 +4,7 @@ module.exports = {
         "eslint:recommended",
         "plugin:react/recommended",
         "plugin:@typescript-eslint/recommended",
-        "prettier/@typescript-eslint",
+        "prettier",
         "plugin:prettier/recommended",
         "plugin:jest/recommended",
     ],
@@ -41,6 +41,24 @@ module.exports = {
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "error",
         "react/react-in-jsx-scope": "off",
+        "no-restricted-imports": [
+            "error",
+            {
+                paths: [
+                    {
+                        name: "lodash",
+                        message: "only import from subfolders, ie import get from 'lodash/get' instead of import {get} from 'lodash'",
+                    },
+                    {
+                        name: "react",
+                        importNames: ["defaults"],
+                        message: "don't import the React global",
+                    },
+                ],
+            },
+        ],
+        "@typescript-eslint/no-require-imports": "off",
+        "@typescript-eslint/no-var-requires": "off",
     },
     settings: {
         react: {
