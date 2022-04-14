@@ -15,7 +15,8 @@
         "composite": true,
         "paths": {
             "~*": ["src/*"],
-            "test-library": ["test/testing-library.ts"]
+            "testing-library": ["test/testing-library.ts"]
         }
-    }
+    },
+    "include": [".eslintrc.js"]
 }

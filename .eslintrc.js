@@ -20,10 +20,9 @@ module.exports = {
         ecmaFeatures: {
             jsx: true,
         },
-        project: "./tsconfig.json",
+        project: "./src/tsconfig.json",
         sourceType: "module",
     },
-    ignorePatterns: ["node_modules", "*.d.ts", "*.js"],
     rules: {
         "@typescript-eslint/array-type": ["error", { "array-simple": true }],
         "@typescript-eslint/explicit-function-return-type": "off",

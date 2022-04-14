@@ -1,7 +1,9 @@
+const { IgnorePlugin, EnvironmentPlugin } = require("webpack");
+const { merge } = require("webpack-merge");
 const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const { merge } = require("lodash");
-const { IgnorePlugin, EnvironmentPlugin } = require("webpack");
+const MiniCssExtractPlugin = require("copy-webpack-plugin");
+
 const path = require("path");
 const fs = require("fs");
 
@@ -43,7 +45,7 @@ module.exports = (env, args) => {
                 {
                     test: /\.(png|jpg|jpeg|gif|woff|woff2|eot|ttf|svg)$/,
                     loader: "url-loader",
-                    option: {
+                    options: {
                         esModule: false,
                         publicPath: "/",
                         limit: 10 * 1024,
