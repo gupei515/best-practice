@@ -7,3 +7,6 @@
 7. lazy loading
 8. Kafka what does it solve and the motivation
 9. scroll loading
+10. lerna
+11. front end toolkit
+12. summon
