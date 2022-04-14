@@ -1,13 +1,15 @@
 const { IgnorePlugin, EnvironmentPlugin } = require("webpack");
 const { merge } = require("webpack-merge");
-const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("copy-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
+const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 
 const path = require("path");
 const fs = require("fs");
 
 const devConfig = require("./webpack.dev.config");
+const testEnv = process.env.NODE_ENV === "test";
 
 module.exports = (env, args) => {
     console.log(`Building for env='${process.env.NODE_ENV}' with mode='${args.mode}''`);
@@ -26,7 +28,7 @@ module.exports = (env, args) => {
         },
         resolve: {
             extensions: [".ts", ".tsx", ".js", ".jsx", ".json", ".scss", ".css"],
-            alias: aliases,
+            // alias: aliases,
         },
         module: {
             rules: [
