@@ -1,4 +1,9 @@
 1. qr code
-2. web_pack setups 
+2. web_pack setups  -- on going
 3. loading structural page with routes 
 4. hooks for grid
+5. how useState hook was written
+6. processor, why does the saga pattern helps solve our issue
+7. lazy loading
+8. Kafka what does it solve and the motivation
+9. scroll loading
