@@ -19,6 +19,7 @@ const App = () => {
     );
 };
 
+// parent is the one with the outlet
 const Users = () => {
     return (
         <div>
