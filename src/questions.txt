@@ -1,5 +1,5 @@
 1. qr code
-2. web_pack setups  -- on going
+2. web_pack setups  -- done 
 3. loading structural page with routes 
 4. hooks for grid
 5. how useState hook was written
@@ -11,4 +11,9 @@
 11. front end toolkit
 12. summon
 13. widget
-14. deep link
+14. deep link 
+15. themeing bootstrap
+16. pipline -- how its done with a released version of things
+17. engagement builder -- processor
+18. bootstrap setup
+

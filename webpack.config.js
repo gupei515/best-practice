@@ -86,13 +86,13 @@ module.exports = (env, args) => {
                           region: { name: "accrm:region", content: "NA" },
                       },
             }),
-            new CopyPlugin({
-                patterns: [
-                    { from: "assets/favicons", to: "favicons" },
-                    { from: "assets/images", to: "images" },
-                    { from: "assets/events-images", to: "events-images" },
-                ],
-            }),
+            // new CopyPlugin({
+            //     patterns: [
+            //         { from: "assets/favicons", to: "favicons" },
+            //         { from: "assets/images", to: "images" },
+            //         { from: "assets/events-images", to: "events-images" },
+            //     ],
+            // }),
             new MiniCssExtractPlugin({
                 filename: "[name].[contenthash.css]",
                 chunkFilename: "[name].[contenthash].css",
