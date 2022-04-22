@@ -5,6 +5,7 @@ import { UserProfile } from "./UserProfile";
 import { OwnUserProfile } from "./OwnUserProfile";
 
 // https://medium.com/age-of-awareness/amazing-new-stuff-in-react-router-v6-895ba3fab6af
+// read through this  https://reactrouter.com/docs/en/v6/getting-started/installation
 export const App = () => {
     // useRoutes to create the routes element by supplying the array. TODO
     const elements = useRoutes([
