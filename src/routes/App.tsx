@@ -9,7 +9,7 @@ export const App = () => {
     // useRoutes to create the routes element by supplying the array. TODO
     const elements = useRoutes([
         {
-            path: "/",
+            path: ":id",
             element: <Home />,
         },
         {
@@ -28,7 +28,7 @@ export const App = () => {
     // return (
     //     <BrowserRouter>
     //         <Routes>
-    //             <Route path="/" element={<Home />} />
+    //             <Route path=":id" element={<Home />} />
     //             <Route path="users" element={<Users />}>
     //                 <Route path="/" element={<UsersIndex />}></Route>
     //                 <Route path=":id" element={<UserProfile />}></Route>
