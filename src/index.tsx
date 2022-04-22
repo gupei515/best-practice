@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import ReactDOM from "react-dom";
-import "./index.css";
 import { App } from "./routes/App";
 import reportWebVitals from "./reportWebVitals";
+import "./index.scss";
 
 ReactDOM.render(
     <React.StrictMode>

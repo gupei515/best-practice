@@ -11,6 +11,10 @@ const fs = require("fs");
 const devConfig = require("./webpack.dev.config");
 const testEnv = process.env.NODE_ENV === "test";
 
+const aliases = fs
+    .readdirSync("./src/")
+    .reduce((acc, subDir) => ({ ...acc, ["~" + subDir]: path.resolve(path.join(__dirname, "./src/", subDir)) }));
+
 module.exports = (env, args) => {
     console.log(`Building for env='${process.env.NODE_ENV}' with mode='${args.mode}''`);
 
@@ -28,7 +32,7 @@ module.exports = (env, args) => {
         },
         resolve: {
             extensions: [".ts", ".tsx", ".js", ".jsx", ".json", ".scss", ".css"],
-            // alias: aliases,
+            alias: aliases,
         },
         module: {
             rules: [
