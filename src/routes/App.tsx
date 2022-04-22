@@ -4,7 +4,7 @@ import { UsersIndex } from "./UsersIndex";
 import { UserProfile } from "./UserProfile";
 import { OwnUserProfile } from "./OwnUserProfile";
 
-const App = () => {
+export const App = () => {
     return (
         <BrowserRouter>
             <Routes>
