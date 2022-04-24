@@ -99,7 +99,7 @@ module.exports = (env, args) => {
             //     ],
             // }),
             new MiniCssExtractPlugin({
-                filename: "[name].[contenthash.].css",
+                filename: "[name].[contenthash].css",
                 chunkFilename: "[name].[contenthash].css",
             }),
             new EnvironmentPlugin({ PROJECT_VERSION: "LOCAL", ...env }),
