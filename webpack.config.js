@@ -17,17 +17,18 @@ const aliases = fs
 
 module.exports = (env, args) => {
     console.log(`Building for env='${process.env.NODE_ENV}' with mode='${args.mode}''`);
+    console.log(`__dirname ${__dirname}`); //print: "__dirname G:\learn-react"
 
     const productionMode = args.mode === "production";
 
     const commonConfig = {
-        context: __dirname,
+        context: __dirname, //curren
         entry: {
             main: "./src/index.tsx",
         },
         output: {
             path: path.join(__dirname, "dist/"),
-            publicPath: "/",
+            publicPath: "/", // the path to get to the page of index.tsx, index.tsx 里面包含App
             filename: "[name].[contenthash].js",
         },
         resolve: {
@@ -98,10 +99,10 @@ module.exports = (env, args) => {
             //     ],
             // }),
             new MiniCssExtractPlugin({
-                filename: "[name].[contenthash.css]",
+                filename: "[name].[contenthash.].css",
                 chunkFilename: "[name].[contenthash].css",
             }),
-            new EnvironmentPlugin({ PROJECT_VERSION: "loal", ...env }),
+            new EnvironmentPlugin({ PROJECT_VERSION: "LOCAL", ...env }),
         ],
         stats: {
             errors: true,
@@ -121,6 +122,6 @@ module.exports = (env, args) => {
         },
     };
 
-    if (testEnv) return merge(cypressConfig, commonConfig, devConfig);
+    if (testEnv) return merge(commonConfig, devConfig);
     return productionMode ? merge(commonConfig, prodConfig) : merge(commonConfig, devConfig);
 };
