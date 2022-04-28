@@ -1,6 +1,6 @@
-1. qr code
+1. qr code -- watched youtube already
 2. web_pack setups  -- done 
-3. loading structural page with routes 
+3. loading structural page with routes -- semi done
 4. hooks for grid
 5. how useState hook was written
 6. processor, why does the saga pattern helps solve our issue
@@ -9,11 +9,16 @@
 9. scroll loading
 10. lerna, package setup, push to registry
 11. front end toolkit
-12. summon
+12. summon  -- work in progress, this week
+    1. write the code myself 
+    2. compare my code to his
+    3. put it under common and test 
+    4. move to lerna
 13. widget
 14. deep link 
 15. themeing bootstrap
-16. pipline -- how its done with a released version of things
+16. pipline -- how its done with a released version of things (pipeline deployment script)
 17. engagement builder -- processor
 18. bootstrap setup
-
+19. lerna -- multi-packages project setup
+20. kafka
