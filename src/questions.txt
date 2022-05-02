@@ -22,3 +22,5 @@
 18. bootstrap setup
 19. lerna -- multi-packages project setup
 20. kafka
+21. create component based on string -- profile create --revisit today
+22. add the formatter

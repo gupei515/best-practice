@@ -45,6 +45,10 @@ const initWithoutBody = (method: "GET" | "DELETE", defaults?: SummonInit) => (ur
 const responseIsNot = "Response is not";
 
 const createSubMethods = <T extends (...args) => SummonFullInit>(initConstructor: T, sequenceMap: Map<any, AbortController>) => {
+
+    const fetchJustFunction = (defaultHeaders: any, parseResponse: (response: Response) => any, args) => {
+
+    }
     const fetcher = (defaultHeaders: any, parseResponse: (response: Response) => any) => (...args: Parameters<T>) => {
         const init = initConstructor(...args);
         init.headers = mergeHeaders(init.headers, defaultHeaders);
@@ -75,6 +79,7 @@ const createSubMethods = <T extends (...args) => SummonFullInit>(initConstructor
     };
 
     return {
+        something: 
         json: fetcher(ACCEPT_JSON, (res) =>
             res
                 .json()
