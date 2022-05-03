@@ -1,8 +1,8 @@
 1. qr code -- watched youtube already
 2. web_pack setups  -- done 
 3. loading structural page with routes -- semi done
-4. hooks for grid
-5. how useState hook was written
+4. hooks for grid -- continue
+5. how useState fetch data hook was written
 6. processor, why does the saga pattern helps solve our issue
 7. lazy loading
 8. Kafka what does it solve and the motivation
@@ -23,4 +23,12 @@
 19. lerna -- multi-packages project setup
 20. kafka
 21. create component based on string -- profile create --revisit today
-22. add the formatter
+22. add the formatter -- done
+23. ag-grid onCellValueChanged
+24. ErrorBoundry -- done
+25. Alternative layout
+26. Controlled Element vs Uncontrolled Element
+    -- Controlled component is component that get the changed value from the callback function
+    -- and unControlled component is component that have the one from the dom
+27. Popper for tooltip
+
