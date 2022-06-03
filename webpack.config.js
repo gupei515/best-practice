@@ -40,7 +40,7 @@ module.exports = (env, args) => {
                 {
                     test: /\.tsx?$/,
                     loader: "ts-loader",
-                    exclude: /node_modules/,
+                    exclude: [/node_modules/, path.resolve(__dirname, "src/common/summon")], // not working here
                     options: {
                         transpileOnly: true, // type checking in ForkIsCheckerWebpackPlugin
                     },

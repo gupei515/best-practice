@@ -31,4 +31,11 @@
     -- Controlled component is component that get the changed value from the callback function
     -- and unControlled component is component that have the one from the dom
 27. Popper for tooltip
-
+28. package version --svm 
+29. deployment in lerna
+30. widget -- the thinking process of writing it 
+31. usePersistanceStore
+32. Confetti effects
+33. attachments as a seperate component
+34. metrics package
+35. useLocation
