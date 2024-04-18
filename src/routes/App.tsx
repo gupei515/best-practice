@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route, Link, Outlet, useRoutes } from "react-router-dom";
-import { Home } from "./Home";
+import Home from "./Home";
 import { UsersIndex } from "./UsersIndex";
 import { UserProfile } from "./UserProfile";
 import { OwnUserProfile } from "./OwnUserProfile";

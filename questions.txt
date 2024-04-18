@@ -1,4 +1,4 @@
-1. qr code -- watched youtube already
+1. qr code -- 
 2. web_pack setups  -- done 
 3. loading structural page with routes -- semi done
 4. hooks for grid -- continue

@@ -76,7 +76,7 @@ module.exports = (env, args) => {
                 meta: productionMode
                     ? {}
                     : {
-                          region: { name: "accrm:region", content: "NA" },
+                          region: { name: "****:region", content: "NA" },
                       },
             }),
             new HtmlWebpackPlugin({
@@ -88,7 +88,7 @@ module.exports = (env, args) => {
                 meta: productionMode
                     ? {}
                     : {
-                          region: { name: "accrm:region", content: "NA" },
+                          region: { name: "*****:region", content: "NA" },
                       },
             }),
             // new CopyPlugin({
